@@ -1,9 +1,7 @@
 FROM centos:centos6.7
 
 RUN yum install wget -y \
-    && yum check-update \
-    && yum update \
-    && setenforce 0
+    && yum update -y
 
 RUN wget http://nginx.org/packages/centos/6/noarch/RPMS/nginx-release-centos-6-0.el6.ngx.noarch.rpm \
     && rpm -ivh nginx-release-centos-6-0.el6.ngx.noarch.rpm \
