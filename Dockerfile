@@ -14,4 +14,5 @@ RUN wget https://mirror.webtatic.com/yum/el6/latest.rpm \
     && yum install php70w php70w-cli php70w-common php70w-fpm php70w-gd php70w-mbstring php70w-intl php70w-mcrypt php70w-mysql php70w-mysql php70w-pdo php70w-xml
     && chkconfig php-fpm on
 
+
 EXPOSE 80
